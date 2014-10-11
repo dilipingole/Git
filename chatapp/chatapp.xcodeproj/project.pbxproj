@@ -1,0 +1,541 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		182C3E8219E65FF8003B5F53 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 182C3E8119E65FF8003B5F53 /* CFNetwork.framework */; };
+		18A4612E19E3BABA007D6F91 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18A4612D19E3BABA007D6F91 /* Foundation.framework */; };
+		18A4613019E3BABA007D6F91 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18A4612F19E3BABA007D6F91 /* CoreGraphics.framework */; };
+		18A4613219E3BABA007D6F91 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18A4613119E3BABA007D6F91 /* UIKit.framework */; };
+		18A4613819E3BABA007D6F91 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 18A4613619E3BABA007D6F91 /* InfoPlist.strings */; };
+		18A4613A19E3BABA007D6F91 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 18A4613919E3BABA007D6F91 /* main.m */; };
+		18A4613E19E3BABA007D6F91 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 18A4613D19E3BABA007D6F91 /* AppDelegate.m */; };
+		18A4614119E3BABA007D6F91 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18A4613F19E3BABA007D6F91 /* Main.storyboard */; };
+		18A4614419E3BABA007D6F91 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18A4614319E3BABA007D6F91 /* ViewController.m */; };
+		18A4614619E3BABA007D6F91 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 18A4614519E3BABA007D6F91 /* Images.xcassets */; };
+		18A4614D19E3BABA007D6F91 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18A4614C19E3BABA007D6F91 /* XCTest.framework */; };
+		18A4614E19E3BABA007D6F91 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18A4612D19E3BABA007D6F91 /* Foundation.framework */; };
+		18A4614F19E3BABA007D6F91 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18A4613119E3BABA007D6F91 /* UIKit.framework */; };
+		18A4615719E3BABA007D6F91 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 18A4615519E3BABA007D6F91 /* InfoPlist.strings */; };
+		18A4615919E3BABA007D6F91 /* chatappTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 18A4615819E3BABA007D6F91 /* chatappTests.m */; };
+		18CE874019E7B2C3006774DA /* images.png in Resources */ = {isa = PBXBuildFile; fileRef = 18CE873F19E7B2C3006774DA /* images.png */; };
+		18CE874B19E7C383006774DA /* balloon_read_left.png in Resources */ = {isa = PBXBuildFile; fileRef = 18CE874219E7C383006774DA /* balloon_read_left.png */; };
+		18CE874C19E7C383006774DA /* balloon_read_right.png in Resources */ = {isa = PBXBuildFile; fileRef = 18CE874319E7C383006774DA /* balloon_read_right.png */; };
+		18CE874D19E7C383006774DA /* balloon_selected_left.png in Resources */ = {isa = PBXBuildFile; fileRef = 18CE874419E7C383006774DA /* balloon_selected_left.png */; };
+		18CE874E19E7C383006774DA /* balloon_selected_right.png in Resources */ = {isa = PBXBuildFile; fileRef = 18CE874519E7C383006774DA /* balloon_selected_right.png */; };
+		18CE874F19E7C383006774DA /* balloon_unread_left.png in Resources */ = {isa = PBXBuildFile; fileRef = 18CE874619E7C383006774DA /* balloon_unread_left.png */; };
+		18CE875019E7C383006774DA /* balloon_unread_right.png in Resources */ = {isa = PBXBuildFile; fileRef = 18CE874719E7C383006774DA /* balloon_unread_right.png */; };
+		18CE875119E7C383006774DA /* PTSMessagingCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 18CE874919E7C383006774DA /* PTSMessagingCell.m */; };
+		18CE875219E7C383006774DA /* send.png in Resources */ = {isa = PBXBuildFile; fileRef = 18CE874A19E7C383006774DA /* send.png */; };
+		18CE875919E7D630006774DA /* me.png in Resources */ = {isa = PBXBuildFile; fileRef = 18CE875719E7D630006774DA /* me.png */; };
+		18CE875A19E7D630006774DA /* admin.png in Resources */ = {isa = PBXBuildFile; fileRef = 18CE875819E7D630006774DA /* admin.png */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		18A4615019E3BABA007D6F91 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 18A4612219E3BABA007D6F91 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 18A4612919E3BABA007D6F91;
+			remoteInfo = chatapp;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		182C3E8119E65FF8003B5F53 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		182C3E8319E66E62003B5F53 /* in.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = in.h; sourceTree = "<group>"; };
+		182C3E8419E66E62003B5F53 /* inet.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = inet.h; sourceTree = "<group>"; };
+		182C3E8519E66E62003B5F53 /* socket.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = socket.h; sourceTree = "<group>"; };
+		182C3E8619E66E62003B5F53 /* types.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = types.h; sourceTree = "<group>"; };
+		182C3E8719E67201003B5F53 /* ifaddrs.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ifaddrs.h; sourceTree = "<group>"; };
+		18A4612A19E3BABA007D6F91 /* chatapp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = chatapp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		18A4612D19E3BABA007D6F91 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		18A4612F19E3BABA007D6F91 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		18A4613119E3BABA007D6F91 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		18A4613519E3BABA007D6F91 /* chatapp-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "chatapp-Info.plist"; sourceTree = "<group>"; };
+		18A4613719E3BABA007D6F91 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		18A4613919E3BABA007D6F91 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		18A4613B19E3BABA007D6F91 /* chatapp-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "chatapp-Prefix.pch"; sourceTree = "<group>"; };
+		18A4613C19E3BABA007D6F91 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		18A4613D19E3BABA007D6F91 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		18A4614019E3BABA007D6F91 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		18A4614219E3BABA007D6F91 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		18A4614319E3BABA007D6F91 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		18A4614519E3BABA007D6F91 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		18A4614B19E3BABA007D6F91 /* chatappTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = chatappTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		18A4614C19E3BABA007D6F91 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		18A4615419E3BABA007D6F91 /* chatappTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "chatappTests-Info.plist"; sourceTree = "<group>"; };
+		18A4615619E3BABA007D6F91 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		18A4615819E3BABA007D6F91 /* chatappTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = chatappTests.m; sourceTree = "<group>"; };
+		18CE873F19E7B2C3006774DA /* images.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = images.png; sourceTree = "<group>"; };
+		18CE874219E7C383006774DA /* balloon_read_left.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = balloon_read_left.png; sourceTree = "<group>"; };
+		18CE874319E7C383006774DA /* balloon_read_right.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = balloon_read_right.png; sourceTree = "<group>"; };
+		18CE874419E7C383006774DA /* balloon_selected_left.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = balloon_selected_left.png; sourceTree = "<group>"; };
+		18CE874519E7C383006774DA /* balloon_selected_right.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = balloon_selected_right.png; sourceTree = "<group>"; };
+		18CE874619E7C383006774DA /* balloon_unread_left.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = balloon_unread_left.png; sourceTree = "<group>"; };
+		18CE874719E7C383006774DA /* balloon_unread_right.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = balloon_unread_right.png; sourceTree = "<group>"; };
+		18CE874819E7C383006774DA /* PTSMessagingCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PTSMessagingCell.h; sourceTree = "<group>"; };
+		18CE874919E7C383006774DA /* PTSMessagingCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PTSMessagingCell.m; sourceTree = "<group>"; };
+		18CE874A19E7C383006774DA /* send.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = send.png; sourceTree = "<group>"; };
+		18CE875719E7D630006774DA /* me.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = me.png; sourceTree = "<group>"; };
+		18CE875819E7D630006774DA /* admin.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = admin.png; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		18A4612719E3BABA007D6F91 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				182C3E8219E65FF8003B5F53 /* CFNetwork.framework in Frameworks */,
+				18A4613019E3BABA007D6F91 /* CoreGraphics.framework in Frameworks */,
+				18A4613219E3BABA007D6F91 /* UIKit.framework in Frameworks */,
+				18A4612E19E3BABA007D6F91 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		18A4614819E3BABA007D6F91 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				18A4614D19E3BABA007D6F91 /* XCTest.framework in Frameworks */,
+				18A4614F19E3BABA007D6F91 /* UIKit.framework in Frameworks */,
+				18A4614E19E3BABA007D6F91 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		18A4612119E3BABA007D6F91 = {
+			isa = PBXGroup;
+			children = (
+				18CE874119E7C383006774DA /* PTSMessagingCell */,
+				18A4613319E3BABA007D6F91 /* chatapp */,
+				18A4615219E3BABA007D6F91 /* chatappTests */,
+				18A4612C19E3BABA007D6F91 /* Frameworks */,
+				18A4612B19E3BABA007D6F91 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		18A4612B19E3BABA007D6F91 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				18A4612A19E3BABA007D6F91 /* chatapp.app */,
+				18A4614B19E3BABA007D6F91 /* chatappTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		18A4612C19E3BABA007D6F91 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				182C3E8119E65FF8003B5F53 /* CFNetwork.framework */,
+				18A4612D19E3BABA007D6F91 /* Foundation.framework */,
+				18A4612F19E3BABA007D6F91 /* CoreGraphics.framework */,
+				18A4613119E3BABA007D6F91 /* UIKit.framework */,
+				18A4614C19E3BABA007D6F91 /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		18A4613319E3BABA007D6F91 /* chatapp */ = {
+			isa = PBXGroup;
+			children = (
+				18A4613C19E3BABA007D6F91 /* AppDelegate.h */,
+				182C3E8319E66E62003B5F53 /* in.h */,
+				182C3E8419E66E62003B5F53 /* inet.h */,
+				18CE873F19E7B2C3006774DA /* images.png */,
+				182C3E8519E66E62003B5F53 /* socket.h */,
+				182C3E8719E67201003B5F53 /* ifaddrs.h */,
+				182C3E8619E66E62003B5F53 /* types.h */,
+				18A4613D19E3BABA007D6F91 /* AppDelegate.m */,
+				18A4613F19E3BABA007D6F91 /* Main.storyboard */,
+				18A4614219E3BABA007D6F91 /* ViewController.h */,
+				18A4614319E3BABA007D6F91 /* ViewController.m */,
+				18A4614519E3BABA007D6F91 /* Images.xcassets */,
+				18A4613419E3BABA007D6F91 /* Supporting Files */,
+			);
+			path = chatapp;
+			sourceTree = "<group>";
+		};
+		18A4613419E3BABA007D6F91 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				18A4613519E3BABA007D6F91 /* chatapp-Info.plist */,
+				18A4613619E3BABA007D6F91 /* InfoPlist.strings */,
+				18A4613919E3BABA007D6F91 /* main.m */,
+				18A4613B19E3BABA007D6F91 /* chatapp-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		18A4615219E3BABA007D6F91 /* chatappTests */ = {
+			isa = PBXGroup;
+			children = (
+				18A4615819E3BABA007D6F91 /* chatappTests.m */,
+				18A4615319E3BABA007D6F91 /* Supporting Files */,
+			);
+			path = chatappTests;
+			sourceTree = "<group>";
+		};
+		18A4615319E3BABA007D6F91 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				18A4615419E3BABA007D6F91 /* chatappTests-Info.plist */,
+				18A4615519E3BABA007D6F91 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		18CE874119E7C383006774DA /* PTSMessagingCell */ = {
+			isa = PBXGroup;
+			children = (
+				18CE875719E7D630006774DA /* me.png */,
+				18CE875819E7D630006774DA /* admin.png */,
+				18CE874219E7C383006774DA /* balloon_read_left.png */,
+				18CE874319E7C383006774DA /* balloon_read_right.png */,
+				18CE874419E7C383006774DA /* balloon_selected_left.png */,
+				18CE874519E7C383006774DA /* balloon_selected_right.png */,
+				18CE874619E7C383006774DA /* balloon_unread_left.png */,
+				18CE874719E7C383006774DA /* balloon_unread_right.png */,
+				18CE874819E7C383006774DA /* PTSMessagingCell.h */,
+				18CE874919E7C383006774DA /* PTSMessagingCell.m */,
+				18CE874A19E7C383006774DA /* send.png */,
+			);
+			path = PTSMessagingCell;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		18A4612919E3BABA007D6F91 /* chatapp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 18A4615C19E3BABA007D6F91 /* Build configuration list for PBXNativeTarget "chatapp" */;
+			buildPhases = (
+				18A4612619E3BABA007D6F91 /* Sources */,
+				18A4612719E3BABA007D6F91 /* Frameworks */,
+				18A4612819E3BABA007D6F91 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = chatapp;
+			productName = chatapp;
+			productReference = 18A4612A19E3BABA007D6F91 /* chatapp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		18A4614A19E3BABA007D6F91 /* chatappTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 18A4615F19E3BABA007D6F91 /* Build configuration list for PBXNativeTarget "chatappTests" */;
+			buildPhases = (
+				18A4614719E3BABA007D6F91 /* Sources */,
+				18A4614819E3BABA007D6F91 /* Frameworks */,
+				18A4614919E3BABA007D6F91 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				18A4615119E3BABA007D6F91 /* PBXTargetDependency */,
+			);
+			name = chatappTests;
+			productName = chatappTests;
+			productReference = 18A4614B19E3BABA007D6F91 /* chatappTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		18A4612219E3BABA007D6F91 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = sanhotrasoft;
+				TargetAttributes = {
+					18A4614A19E3BABA007D6F91 = {
+						TestTargetID = 18A4612919E3BABA007D6F91;
+					};
+				};
+			};
+			buildConfigurationList = 18A4612519E3BABA007D6F91 /* Build configuration list for PBXProject "chatapp" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 18A4612119E3BABA007D6F91;
+			productRefGroup = 18A4612B19E3BABA007D6F91 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				18A4612919E3BABA007D6F91 /* chatapp */,
+				18A4614A19E3BABA007D6F91 /* chatappTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		18A4612819E3BABA007D6F91 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				18CE874F19E7C383006774DA /* balloon_unread_left.png in Resources */,
+				18CE874C19E7C383006774DA /* balloon_read_right.png in Resources */,
+				18CE875A19E7D630006774DA /* admin.png in Resources */,
+				18CE874E19E7C383006774DA /* balloon_selected_right.png in Resources */,
+				18CE875919E7D630006774DA /* me.png in Resources */,
+				18CE875219E7C383006774DA /* send.png in Resources */,
+				18A4614619E3BABA007D6F91 /* Images.xcassets in Resources */,
+				18CE874B19E7C383006774DA /* balloon_read_left.png in Resources */,
+				18A4613819E3BABA007D6F91 /* InfoPlist.strings in Resources */,
+				18A4614119E3BABA007D6F91 /* Main.storyboard in Resources */,
+				18CE875019E7C383006774DA /* balloon_unread_right.png in Resources */,
+				18CE874D19E7C383006774DA /* balloon_selected_left.png in Resources */,
+				18CE874019E7B2C3006774DA /* images.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		18A4614919E3BABA007D6F91 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				18A4615719E3BABA007D6F91 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		18A4612619E3BABA007D6F91 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				18A4614419E3BABA007D6F91 /* ViewController.m in Sources */,
+				18A4613E19E3BABA007D6F91 /* AppDelegate.m in Sources */,
+				18CE875119E7C383006774DA /* PTSMessagingCell.m in Sources */,
+				18A4613A19E3BABA007D6F91 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		18A4614719E3BABA007D6F91 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				18A4615919E3BABA007D6F91 /* chatappTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		18A4615119E3BABA007D6F91 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 18A4612919E3BABA007D6F91 /* chatapp */;
+			targetProxy = 18A4615019E3BABA007D6F91 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		18A4613619E3BABA007D6F91 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				18A4613719E3BABA007D6F91 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		18A4613F19E3BABA007D6F91 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				18A4614019E3BABA007D6F91 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		18A4615519E3BABA007D6F91 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				18A4615619E3BABA007D6F91 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		18A4615A19E3BABA007D6F91 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		18A4615B19E3BABA007D6F91 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		18A4615D19E3BABA007D6F91 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "chatapp/chatapp-Prefix.pch";
+				INFOPLIST_FILE = "chatapp/chatapp-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		18A4615E19E3BABA007D6F91 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "chatapp/chatapp-Prefix.pch";
+				INFOPLIST_FILE = "chatapp/chatapp-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		18A4616019E3BABA007D6F91 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/chatapp.app/chatapp";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "chatapp/chatapp-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "chatappTests/chatappTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		18A4616119E3BABA007D6F91 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/chatapp.app/chatapp";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "chatapp/chatapp-Prefix.pch";
+				INFOPLIST_FILE = "chatappTests/chatappTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		18A4612519E3BABA007D6F91 /* Build configuration list for PBXProject "chatapp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				18A4615A19E3BABA007D6F91 /* Debug */,
+				18A4615B19E3BABA007D6F91 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		18A4615C19E3BABA007D6F91 /* Build configuration list for PBXNativeTarget "chatapp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				18A4615D19E3BABA007D6F91 /* Debug */,
+				18A4615E19E3BABA007D6F91 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		18A4615F19E3BABA007D6F91 /* Build configuration list for PBXNativeTarget "chatappTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				18A4616019E3BABA007D6F91 /* Debug */,
+				18A4616119E3BABA007D6F91 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 18A4612219E3BABA007D6F91 /* Project object */;
+}
